@@ -1,0 +1,14 @@
+set(OpenCL_FOUND TRUE)
+set(OpenCL_VERSION_STRING "3.0")
+set(OpenCL_VERSION_MAJOR 3)
+set(OpenCL_VERSION_MINOR 0)
+set(OpenCL_INCLUDE_DIRS "${OPENCL_HEADERS_ROOT}")
+set(OpenCL_LIBRARIES OpenCL)
+set(OpenCL_INCLUDE_DIR "${OPENCL_HEADERS_ROOT}")
+set(OpenCL_LIBRARY OpenCL)
+
+if(NOT TARGET OpenCL::OpenCL)
+    add_library(OpenCL::OpenCL ALIAS OpenCL)
+endif()
+
+mark_as_advanced(OpenCL_INCLUDE_DIR OpenCL_LIBRARY)
