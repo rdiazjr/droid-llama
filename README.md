@@ -1,6 +1,6 @@
 # DroidLlama
 
-DroidLlama is an Android app for running GGUF language models directly on a device through `llama.cpp`. The project directory is named **AndroidLlama**; the installed app is named **DroidLlama**.
+DroidLlama is an Android app for running GGUF language models directly on a device through `llama.cpp`.
 
 The app provides a Jetpack Compose chat interface, a public Hugging Face model browser, saved conversations, document context, and optional web search. Model inference runs locally, so downloaded models can be used offline with web search disabled. No hosted inference server or API key is required by the current implementation.
 
